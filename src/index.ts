@@ -6,7 +6,7 @@ import mkdirp from 'mkdirp'
 
 type CipherParams = Parameters<typeof Cipher.prototype.update>[0]
 
-class Cryptowrap {
+export default class Cryptowrap {
     private algorithm = 'aes256'
     private ivlen = 16
 
